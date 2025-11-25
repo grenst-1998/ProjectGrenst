@@ -1,0 +1,84 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.imagenes{
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.img-borde {
+  border: 4px solid #928cc5;        /* borde negro */
+  border-radius: 12px;           /* esquinas redondeadas */
+  padding: 4px;                  /* espacio interno */
+  box-shadow: 0 4px 10px rgba(161, 7, 207, 0.438); /* sombra elegante */
+  display: block;
+  margin: 10px auto;
+  width: 95%;                    /* ajusta tamaño sin deformar */
+}
+
+
+
+/*poner estilo responsive a lapagina web*/
+
+.img-borde {
+  width: 100%;               /* La imagen siempre ocupa todo el ancho del card */
+  height: auto;              /* Evita deformaciones */
+  border: 4px solid #2a35d6;    /* Borde */
+  border-radius: 12px;       /* Bordes redondeados */
+  padding: 4px;              
+  box-shadow: 0 4px 10px rgba(31, 216, 124, 0.25);
+  display: block;
+}
+
+/* Responsividad para tablets */
+@media (min-width: 600px) {
+  ion-card {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .img-borde {
+    max-width: 90%;     /* Reduce un poco el tamaño en tablets */
+  }
+}
+
+/* Responsividad para pantallas grandes / PC */
+@media (min-width: 992px) {
+  ion-card {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .img-borde {
+    max-width: 85%;
+  }
+}
