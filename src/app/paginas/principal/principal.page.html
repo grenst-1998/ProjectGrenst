@@ -1,29 +1,64 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>CARTASCOLECCIONABLES DE ONE PIECE</ion-title>
+    <ion-title>CARTAS COLECCIONABLES DE ONE PIECE</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <ion-card> 
-    <ion-img src="assets/img/1imag.jpg" class="img-borde"></ion-img>
-    <ion-text>
-      <h1>Luffy y sus amigos</h1>
-    </ion-text>
-    <ion-text color="danger">
-      <h2>Precio: $200</h2>
-    </ion-text>
-  </ion-card>
+  <div class="grid-cartas"> 
 
-  <ion-card> 
-    <ion-img src="assets/img/2imag.jpg" class="img-borde"></ion-img>
-    <ion-text>
-      <h1>El rey de los piratas</h1>
-    </ion-text>
-    <ion-text color="danger">
-      <h2>Precio: $200</h2>
-    </ion-text>
-  </ion-card>
+    <ion-card (click)="irVerMas()">
+      <ion-img src="assets/img/1imag.jpg" class="img-borde"></ion-img>
+      <ion-card-content>
+        <h1>Luffy y sus amigos</h1>
+        <h2 class="precio">$200</h2>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-img src="assets/img/2imag.jpg" class="img-borde"></ion-img>
+      <ion-card-content>
+        <h1>El rey de los piratas</h1>
+        <h2 class="precio">$200</h2>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-img src="assets/img/3imag.jpg" class="img-borde"></ion-img>
+      <ion-card-content>
+        <h1>El rey de los piratas</h1>
+        <h2 class="precio">$200</h2>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-img src="assets/img/4imag.jpg" class="img-borde"></ion-img>
+      <ion-card-content>
+        <h1>El rey de los piratas</h1>
+        <h2 class="precio">$200</h2>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-img src="assets/img/5imag.jpg" class="img-borde"></ion-img>
+      <ion-card-content>
+        <h1>El rey de los piratas</h1>
+        <h2 class="precio">$200</h2>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-img src="assets/img/6imag.jpg" class="img-borde"></ion-img>
+      <ion-card-content>
+        <h1>El rey de los piratas</h1>
+        <h2 class="precio">$200</h2>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
 
 </ion-content>
+
+
+

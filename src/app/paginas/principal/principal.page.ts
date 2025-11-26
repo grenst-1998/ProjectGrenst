@@ -2,6 +2,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonImg } from '@ionic/angular/standalone';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -11,11 +12,12 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonImg } from '@i
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonCard, IonImg]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class PrincipalPage implements OnInit {
+export class PrincipalPage {
 
-  constructor() { }
+   constructor(private router: Router) {}
 
-  ngOnInit() {
+  irVerMas() {
+    this.router.navigate(['/vermas']);
   }
 
 }
